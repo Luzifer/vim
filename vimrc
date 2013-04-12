@@ -166,7 +166,7 @@ syntax enable
 colorscheme groovym
 
 " background - "dark" or "light"; the background color brightness
-set bg=light
+set bg=dark
 
 " hlsearch - highlight all matches for the last used search pattern
 set hls " nohls
