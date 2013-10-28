@@ -1,6 +1,16 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
+Bundle 'gmarik/vundle'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'jakar/vim-json'
+Bundle 'rodjek/vim-puppet'
+Bundle 'jnwhiteh/vim-golang'
+
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'mutewinter/nginx.vim'
+Bundle 'chrisbra/csv.vim'
 
 " important settings
 "
