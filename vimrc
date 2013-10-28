@@ -872,28 +872,6 @@ set imak=
 set ambw=single
 
 "
-" printing
-" 
-
-" printdevice - name of the printer to be used for :hardcopy
-"set pdev=
-
-" printencoding - encoding used to print the PostScript file for :hardcopy
-"set penc=
-
-" printexpr - expression used to print the PostScript file for :hardcopy
-"set pexpr=system('lpr'\ .\ (&printdevice\ ==\ ''\ ?\ ''\ :\ '\ -P'\ .\ &printdevice)\ .\ '\ '\ .\ v:fname_in)\ .\ delete(v:fname_in)\ +\ v:shell_error
-
-" printfont - name of the font to be used for :hardcopy
-"set pfn=courier
-
-" printheader - format of the header used for :hardcopy
-"set pheader=%<%f%h%m%=Page\ %N
-
-" printoptions - list of items that control the format of :hardcopy output
-"set popt=
-
-"
 " various
 " 
 
@@ -947,20 +925,3 @@ set debug=
 "
 filetype plugin on
 
-"
-" vimcommander
-"
-"noremap <silent> <F11> :cal VimCommanderToggle()<CR>
-
-"
-" vimoutliner
-"
-"filetype plugin on
-"filetype indent off
-
-"
-" latexsuite
-"
-"filetype plugin on
-"filetype indent on
-set grepprg=grep\ -nH\ $*
