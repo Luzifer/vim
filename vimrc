@@ -1,14 +1,19 @@
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" vundle - It states it is required?!?
 Bundle 'gmarik/vundle'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'jakar/vim-json'
-Bundle 'rodjek/vim-puppet'
-Bundle 'jnwhiteh/vim-golang'
 
+" Other plugins
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
+
+" Languages
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'jakar/vim-json'
+Bundle 'rodjek/vim-puppet'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'groenewege/vim-less'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'chrisbra/csv.vim'
 
