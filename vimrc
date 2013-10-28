@@ -921,6 +921,13 @@ set bl " nobl
 set debug=
 
 "
+" Configuration gitgutter
+"
+let g:gitgutter_enabled = 1
+let g:gitgutter_highlight_lines = 0
+hi SignColumn cterm=none ctermbg=none
+
+"
 " filetype (common for plugins)
 "
 filetype plugin on
