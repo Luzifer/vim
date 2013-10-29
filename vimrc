@@ -8,6 +8,9 @@ Bundle 'gmarik/vundle'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
 
+" Jimdo stuff
+Bundle 'Jimdo/vim-spec-runner'
+
 " Languages
 Bundle 'jnwhiteh/vim-golang'
 Bundle 'jakar/vim-json'
