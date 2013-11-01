@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 " Other plugins
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'scrooloose/nerdtree'
 
 " Jimdo stuff
 Bundle 'Jimdo/vim-spec-runner'
