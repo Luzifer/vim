@@ -7,6 +7,7 @@ Bundle 'gmarik/vundle'
 " Other plugins
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 
 " Jimdo stuff
@@ -20,6 +21,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'groenewege/vim-less'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'chrisbra/csv.vim'
+Bundle 'dag/vim-fish'
 
 " important settings
 "
