@@ -935,6 +935,11 @@ let g:gitgutter_highlight_lines = 0
 hi SignColumn cterm=none ctermbg=none
 
 "
+" Use goimports for Fmt
+"
+let g:gofmt_command = "goimports"
+
+"
 " filetype (common for plugins)
 "
 filetype plugin on
