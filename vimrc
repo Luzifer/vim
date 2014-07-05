@@ -22,7 +22,6 @@ Bundle 'groenewege/vim-less'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'chrisbra/csv.vim'
 Bundle 'dag/vim-fish'
-Bundle 'rodjek/vim-puppet'
 
 " important settings
 "
