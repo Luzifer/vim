@@ -76,7 +76,7 @@ set slm=mouse,key
 
 " clipboard - "unnamed" to use the * register like unnamed register
  "autoselect" to always put selected text on the clipboard
-set cb=autoselect ",exclude:cons\\\|linux
+set cb=unnamed,unnamedplus ",exclude:cons\\\|linux
 
 " keymodel - "startsel" and/or "stopsel"; what special keys can do
 set km=
