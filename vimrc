@@ -9,12 +9,12 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
 
 " Jimdo stuff
 Bundle 'Jimdo/vim-spec-runner'
 
 " Languages
-Bundle 'jnwhiteh/vim-golang'
 Bundle 'jakar/vim-json'
 Bundle 'rodjek/vim-puppet'
 Bundle 'kchmck/vim-coffee-script'
@@ -937,7 +937,7 @@ hi SignColumn cterm=none ctermbg=none
 "
 " Use goimports for Fmt
 "
-let g:gofmt_command = "goimports"
+let g:go_fmt_command = "goimports"
 
 "
 " filetype (common for plugins)
