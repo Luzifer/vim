@@ -9,7 +9,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " Jimdo stuff
 Bundle 'Jimdo/vim-spec-runner'
@@ -23,6 +23,8 @@ Bundle 'mutewinter/nginx.vim'
 Bundle 'chrisbra/csv.vim'
 Bundle 'dag/vim-fish'
 Bundle 'fatih/vim-go'
+Plugin 'honza/dockerfile.vim'
+Bundle 'Blackrush/vim-gocode'
 
 " important settings
 "
