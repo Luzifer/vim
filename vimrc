@@ -25,6 +25,7 @@ Bundle 'dag/vim-fish'
 Bundle 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
 Bundle 'Blackrush/vim-gocode'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 " important settings
 "
@@ -253,7 +254,7 @@ set nolist " list
 set lcs=eol:$
 
 " number - show the line number for each line (local to window)
-set nonu " nu
+set nu " nonu
 
 "
 " editing text
@@ -568,7 +569,7 @@ set ttm=-1
 " 
 
 " modeline - enable using settings from modelines when reading a file (local to buffer)
-set noml " ml
+set ml " noml
 
 " modelines - number of lines to check for modelines
 set mls=5
@@ -957,3 +958,16 @@ if &term =~ '^screen'
   execute "set <xRight>=\e[1;*C"
   execute "set <xLeft>=\e[1;*D"
 endif
+
+"
+" NERDTree configuration
+"
+
+" Autostart NERDTree on start
+"autocmd vimenter * NERDTree
+
+" On Ctrl-N toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Autoclose vim when NERDTree is last window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
