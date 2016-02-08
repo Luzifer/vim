@@ -50,8 +50,8 @@ if(&t_Co == 256)
     hi TabLine          cterm=underline ctermfg=239         ctermbg=none
     hi TabLineSel       cterm=bold      ctermfg=255         ctermbg=none
     hi TabLineFill      cterm=underline ctermfg=239         ctermbg=none
-    hi CursorColumn     cterm=none      ctermfg=255         ctermbg=239
-    hi CursorLine       cterm=none      ctermfg=255         ctermbg=239
+    hi CursorColumn     cterm=none      ctermfg=255         ctermbg=234
+    hi CursorLine       cterm=none      ctermfg=none        ctermbg=234
 
     " syntax highlighting
     hi MatchParen       cterm=none      ctermfg=255         ctermbg=242

@@ -885,6 +885,9 @@ set ambw=single
 " various
 " 
 
+" cursorline - show a marker on the current line
+set cursorline
+
 " eventignore - list of autocommand events which are to be ignored
 set ei=
 
