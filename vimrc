@@ -1,3 +1,4 @@
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -10,6 +11,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdcommenter'
 
 " Jimdo stuff
 Bundle 'Jimdo/vim-spec-runner'
