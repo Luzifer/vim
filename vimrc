@@ -12,6 +12,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'wakatime/vim-wakatime'
 
 " Jimdo stuff
 Bundle 'Jimdo/vim-spec-runner'
