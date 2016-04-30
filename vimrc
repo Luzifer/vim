@@ -29,6 +29,7 @@ Bundle 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
 Bundle 'Blackrush/vim-gocode'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
 
 " important settings
 "
