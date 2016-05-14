@@ -13,6 +13,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'wakatime/vim-wakatime'
+Bundle 'godlygeek/tabular'
 
 " Jimdo stuff
 Bundle 'Jimdo/vim-spec-runner'
