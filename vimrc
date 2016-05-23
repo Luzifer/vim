@@ -996,3 +996,11 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+"
+" vim-go configuration
+"
+
+let g:go_gocode_autobuild = 1
+let g:go_metalinter_deadline = "20s"
+let g:go_autodetect_gopath = 0
