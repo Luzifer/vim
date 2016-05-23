@@ -12,7 +12,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Shougo/neocomplete.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'godlygeek/tabular'
@@ -47,7 +47,7 @@ set cpo=aABceFs
 set noim " im
 
 " paste - paste mode, insert typed text literally
-set paste " - nopaste
+set nopaste " - nopaste
 
 " pastetoggle - key sequence to toggle paste mode
 set pt=
@@ -981,3 +981,18 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Autoclose vim when NERDTree is last window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+"
+" NeoComplete configuration
+"
+
+let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
+let g:neocomplete#enable_at_startup = 1 " Use neocomplete.
+let g:neocomplete#enable_smart_case = 1 " Use smartcase.
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
