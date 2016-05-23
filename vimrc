@@ -30,7 +30,6 @@ Plugin 'chrisbra/csv.vim'
 Plugin 'dag/vim-fish'
 Plugin 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
-Plugin 'Blackrush/vim-gocode'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 
