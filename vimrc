@@ -1,34 +1,36 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " vundle - It states it is required?!?
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Other plugins
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'wakatime/vim-wakatime'
-Bundle 'godlygeek/tabular'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'godlygeek/tabular'
 
 " Jimdo stuff
-Bundle 'Jimdo/vim-spec-runner'
+Plugin 'Jimdo/vim-spec-runner'
 
 " Languages
-Bundle 'jakar/vim-json'
-Bundle 'rodjek/vim-puppet'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'groenewege/vim-less'
-Bundle 'mutewinter/nginx.vim'
-Bundle 'chrisbra/csv.vim'
-Bundle 'dag/vim-fish'
-Bundle 'fatih/vim-go'
+Plugin 'jakar/vim-json'
+Plugin 'rodjek/vim-puppet'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'groenewege/vim-less'
+Plugin 'mutewinter/nginx.vim'
+Plugin 'chrisbra/csv.vim'
+Plugin 'dag/vim-fish'
+Plugin 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
-Bundle 'Blackrush/vim-gocode'
+Plugin 'Blackrush/vim-gocode'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
 
