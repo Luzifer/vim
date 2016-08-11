@@ -32,6 +32,9 @@ Plugin 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
+Plugin 'cespare/vim-toml'
+Plugin 'fatih/vim-hclfmt'
+Plugin 'b4b4r07/vim-hcl'
 
 " important settings
 "
