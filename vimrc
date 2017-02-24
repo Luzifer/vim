@@ -1014,3 +1014,4 @@ let g:go_autodetect_gopath = 0
 
 let g:autopep8_aggressive=1
 let g:autopep8_disable_show_diff=1
+autocmd BufWritePre *.py Autopep8
