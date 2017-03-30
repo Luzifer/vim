@@ -16,7 +16,7 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'godlygeek/tabular'
-Plugin 'tell-k/vim-autopep8'
+Plugin 'Chiel92/vim-autoformat'
 
 " Jimdo stuff
 Plugin 'Jimdo/vim-spec-runner'
@@ -1009,9 +1009,7 @@ let g:go_metalinter_deadline = "20s"
 let g:go_autodetect_gopath = 0
 
 "
-" autopep8 configuration
+" Autoformat configuration
 "
 
-let g:autopep8_aggressive=1
-let g:autopep8_disable_show_diff=1
-autocmd BufWritePre *.py Autopep8
+au BufWritePre *.py,*.js :Autoformat
