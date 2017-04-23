@@ -13,22 +13,16 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Shougo/neocomplete.vim'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'godlygeek/tabular'
 Plugin 'Chiel92/vim-autoformat'
 
-" Jimdo stuff
-Plugin 'Jimdo/vim-spec-runner'
-
 " Languages
 Plugin 'jakar/vim-json'
-Plugin 'rodjek/vim-puppet'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
 Plugin 'mutewinter/nginx.vim'
 Plugin 'chrisbra/csv.vim'
-Plugin 'dag/vim-fish'
 Plugin 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
