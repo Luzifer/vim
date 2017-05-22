@@ -12,6 +12,7 @@ set cpo&vim
 " Use on ~/.ssh/config: %Tabularize ssh_config
 AddTabularPattern! ssh_config /^[ ]*[^ ]*\zs /l2l0
 AddTabularPattern! crontab    /\t/r1l0r1l0r1l0r1l0r1l0l0
+AddTabularPattern! firstspace /^ *[^ ]*\zs /l0c0l0
 
 " Restore the saved value of 'cpo'
 let &cpo = s:save_cpo
