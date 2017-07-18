@@ -1007,3 +1007,9 @@ let g:go_autodetect_gopath = 0
 "
 
 au BufWritePre *.py,*.js :Autoformat
+
+"
+" Custom commands
+"
+
+command -range=% JF :<line1>,<line2>!jq .
