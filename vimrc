@@ -16,6 +16,8 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'godlygeek/tabular'
 Plugin 'Chiel92/vim-autoformat'
+Plugin 'vim-airline/vim-airline'
+Plugin 'reedes/vim-pencil'
 
 " Languages
 Plugin 'jakar/vim-json'
