@@ -23,7 +23,6 @@ Plugin 'jakar/vim-json'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'groenewege/vim-less'
 Plugin 'mutewinter/nginx.vim'
-Plugin 'chrisbra/csv.vim'
 Plugin 'fatih/vim-go'
 Plugin 'honza/dockerfile.vim'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
