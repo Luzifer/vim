@@ -13,12 +13,16 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'vim-airline/vim-airline'
 Plug 'reedes/vim-pencil'
 
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+if v:version >= 800
+  if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
 else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
+  Plug 'Shougo/neocomplete.vim'
 endif
 
 " Languages
