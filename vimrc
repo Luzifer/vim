@@ -989,10 +989,16 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "
-" deoplete configuration
+" neocomplete / deoplete configuration
 "
-"
-let g:deoplete#enable_at_startup = 1
+
+if v:version >= 800
+  let g:deoplete#enable_at_startup = 1
+else
+  let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
+  let g:neocomplete#enable_at_startup = 1 " Use neocomplete.
+  let g:neocomplete#enable_smart_case = 1 " Use smartcase.
+endif
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
