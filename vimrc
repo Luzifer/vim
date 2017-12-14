@@ -1,35 +1,40 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
-
-" vundle - It states it is required?!?
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/plugged')
 
 " Other plugins
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'vim-airline/vim-airline'
-Plugin 'reedes/vim-pencil'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'godlygeek/tabular'
+Plug 'Chiel92/vim-autoformat'
+Plug 'vim-airline/vim-airline'
+Plug 'reedes/vim-pencil'
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " Languages
-Plugin 'jakar/vim-json'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'groenewege/vim-less'
-Plugin 'mutewinter/nginx.vim'
-Plugin 'fatih/vim-go'
-Plugin 'honza/dockerfile.vim'
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'Matt-Deacalion/vim-systemd-syntax'
-Plugin 'cespare/vim-toml'
-Plugin 'fatih/vim-hclfmt'
-Plugin 'b4b4r07/vim-hcl'
+Plug 'jakar/vim-json'
+Plug 'kchmck/vim-coffee-script'
+Plug 'groenewege/vim-less'
+Plug 'mutewinter/nginx.vim'
+Plug 'fatih/vim-go'
+Plug 'honza/dockerfile.vim'
+Plug 'nsf/gocode', {'rtp': 'vim/'}
+Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'cespare/vim-toml'
+Plug 'fatih/vim-hclfmt'
+Plug 'b4b4r07/vim-hcl'
+
+call plug#end()
 
 " important settings
 "
@@ -980,12 +985,10 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "
-" NeoComplete configuration
+" deoplete configuration
 "
-
-let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
-let g:neocomplete#enable_at_startup = 1 " Use neocomplete.
-let g:neocomplete#enable_smart_case = 1 " Use smartcase.
+"
+let g:deoplete#enable_at_startup = 1
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
