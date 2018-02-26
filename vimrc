@@ -31,7 +31,7 @@ Plug 'kchmck/vim-coffee-script'
 Plug 'groenewege/vim-less'
 Plug 'mutewinter/nginx.vim'
 Plug 'fatih/vim-go'
-Plug 'honza/dockerfile.vim'
+Plug 'ekalinin/Dockerfile.vim'
 Plug 'nsf/gocode', {'rtp': 'vim/'}
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'cespare/vim-toml'
