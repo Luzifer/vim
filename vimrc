@@ -30,9 +30,13 @@ Plug 'jakar/vim-json'
 Plug 'kchmck/vim-coffee-script'
 Plug 'groenewege/vim-less'
 Plug 'mutewinter/nginx.vim'
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ekalinin/Dockerfile.vim'
-Plug 'nsf/gocode', {'rtp': 'vim/'}
+if v:version >= 800
+  Plug 'zchee/deoplete-go', { 'do': 'make'}
+else
+  Plug 'nsf/gocode', {'rtp': 'vim/'}
+endif
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-hclfmt'
