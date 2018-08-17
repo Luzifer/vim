@@ -41,6 +41,7 @@ Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-hclfmt'
 Plug 'b4b4r07/vim-hcl'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
