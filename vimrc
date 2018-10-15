@@ -1025,6 +1025,7 @@ let g:go_autodetect_gopath = 0
 "
 
 au BufWritePre *.py,*.js :Autoformat
+au FileType sh au BufWritePre <buffer> :call SHFmt()
 
 "
 " Custom commands
