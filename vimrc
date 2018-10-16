@@ -961,7 +961,7 @@ hi SignColumn cterm=none ctermbg=none
 "
 " Use goimports for Fmt
 "
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command = expand("~/.vim/bin/gofmtimport")
 
 "
 " filetype (common for plugins)

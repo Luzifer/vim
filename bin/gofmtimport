@@ -1,0 +1,10 @@
+#!/bin/bash
+set -euxo pipefail
+
+[ ${DEBUG:-0} -eq 1 ] && exec 2>/tmp/gofmtimport.dbg
+
+goimports \
+	-srcdir "$2" \
+	-local "${GOIMPORT_LOCAL:-}" \
+	-w "$2"
+gofmt -s -w "$2"
