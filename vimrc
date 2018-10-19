@@ -13,16 +13,12 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'vim-airline/vim-airline'
 Plug 'reedes/vim-pencil'
 
-if v:version >= 800
-  if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-  endif
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
-  Plug 'Shougo/neocomplete.vim'
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
 " Languages
@@ -32,11 +28,7 @@ Plug 'groenewege/vim-less'
 Plug 'mutewinter/nginx.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ekalinin/Dockerfile.vim'
-if v:version >= 800
-  Plug 'zchee/deoplete-go', { 'do': 'make'}
-else
-  Plug 'nsf/gocode', {'rtp': 'vim/'}
-endif
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-hclfmt'
@@ -994,16 +986,10 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "
-" neocomplete / deoplete configuration
+" deoplete configuration
 "
 
-if v:version >= 800
-  let g:deoplete#enable_at_startup = 1
-else
-  let g:acp_enableAtStartup = 0 " Disable AutoComplPop.
-  let g:neocomplete#enable_at_startup = 1 " Use neocomplete.
-  let g:neocomplete#enable_smart_case = 1 " Use smartcase.
-endif
+let g:deoplete#enable_at_startup = 1
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
