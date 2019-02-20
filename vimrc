@@ -1010,7 +1010,9 @@ let g:go_autodetect_gopath = 0
 " Autoformat configuration
 "
 
-au FileType python,javascript au BufWritePre <buffer> :Autoformat
+let g:formatters_vue = ['eslint_local']
+
+au FileType python,javascript,vue au BufWritePre <buffer> :Autoformat
 au FileType sh,zsh au BufWritePre <buffer> :call SHFmt()
 
 "
