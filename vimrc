@@ -34,6 +34,7 @@ Plug 'cespare/vim-toml'
 Plug 'fatih/vim-hclfmt'
 Plug 'b4b4r07/vim-hcl'
 Plug 'posva/vim-vue'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
@@ -1014,6 +1015,12 @@ let g:formatters_vue = ['eslint_local']
 
 au FileType python,javascript,vue au BufWritePre <buffer> :Autoformat
 au FileType sh,zsh au BufWritePre <buffer> :call SHFmt()
+
+"
+" typescript-vim configuration
+"
+
+let g:typescript_indent_disable = 1
 
 "
 " Custom commands
