@@ -976,9 +976,9 @@ let g:go_metalinter_deadline = "20s"
 "
 
 let g:LanguageClient_serverCommands = {
-    \ 'go': ['gopls'],
-    \ 'python': ['pyls'],
-    \ }
+  \   'go': ['gopls'],
+  \   'python': ['pyls'],
+  \ }
 
 "
 " Autoformat configuration
