@@ -4,31 +4,31 @@ filetype off                  " required
 call plug#begin('~/.config/nvim/plugged')
 
 " Other plugins
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'godlygeek/tabular'
 Plug 'Chiel92/vim-autoformat'
-Plug 'vim-airline/vim-airline'
+Plug 'godlygeek/tabular'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'reedes/vim-pencil'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Languages
+Plug 'b4b4r07/vim-hcl'
+Plug 'cespare/vim-toml'
+Plug 'ekalinin/Dockerfile.vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-hclfmt'
+Plug 'groenewege/vim-less'
 Plug 'jakar/vim-json'
 Plug 'kchmck/vim-coffee-script'
-Plug 'groenewege/vim-less'
-Plug 'mutewinter/nginx.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-Plug 'ekalinin/Dockerfile.vim'
-Plug 'Matt-Deacalion/vim-systemd-syntax'
-Plug 'cespare/vim-toml'
-Plug 'fatih/vim-hclfmt'
-Plug 'b4b4r07/vim-hcl'
-Plug 'posva/vim-vue'
 Plug 'leafgarland/typescript-vim'
+Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'mutewinter/nginx.vim'
+Plug 'posva/vim-vue'
 
 call plug#end()
 
