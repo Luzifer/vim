@@ -1,10 +1,9 @@
-# VIM config
+# Neovim config
 
-This repository holds my VIM configuration including installed bundles managed by vundle.
+This repository holds my Neovim configuration including installed bundles managed by plugged.
 
 ## Installation
 
-* Clone to ~/.vim: `git clone https://github.com/Luzifer/vim.git ~/.vim`
-* Initialize submodule: `cd ~/.vim && git submodule update --init`
-* Create symlink for vimrc: `ln -s ~/.vim/vimrc ~/.vimrc`
-* Initialize vundle `vim +BundleInstall +qall`
+* Clone to ~/.config/nvim: `git clone https://github.com/Luzifer/vim.git ~/.config/nvim`
+* Initialize submodule: `cd ~/.config/nvim && git submodule update --init`
+* Initialize plugged `nvim +PlugInstall +qall`

@@ -1,7 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " Other plugins
 Plug 'nathanaelkane/vim-indent-guides'
@@ -12,14 +12,7 @@ Plug 'godlygeek/tabular'
 Plug 'Chiel92/vim-autoformat'
 Plug 'vim-airline/vim-airline'
 Plug 'reedes/vim-pencil'
-
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Languages
 Plug 'jakar/vim-json'
@@ -69,9 +62,6 @@ set mousem=extend
 " mousetime - maximum time in msec to recognize a double-click
 set mouset=500
 
-" ttymouse - "xterm", "xterm2", "dec" or "netterm"; type of mouse
-set ttym=xterm2
-
 " mouseshape - what the mouse pointer looks like in different modes
 set mouses=i-r:beam,s:updown,sd:udsizing,vs:leftright,vd:lrsizing,m:no,ml:up-arrow,v:rightup-arrow
 
@@ -105,23 +95,11 @@ set km=
 " ttytype - alias for 'term'
 "set tty=builtin_gui
 
-" ttybuiltin - check built-in termcaps first
-set tbi " notbi
-
 " ttyfast - terminal connection is fast
 set tf " notf
 
-" weirdinvert - terminal that requires extra redrawing
-set nowiv " wiv
-
-" esckeys - recognize keys that start with <Esc> in Insert mode
-set ek " noek
-
 " scrolljump - minimal number of lines to scroll at a time
 set sj=1
-
-" ttyscroll - maximum number of lines to use scrolling instead of redrawing
-set tsl=999
 
 " title - show info in the window title
 set title " notitle
@@ -636,9 +614,6 @@ set ar " noar
 " patchmode - keep oldest version of a file; specifies file name extension
 set pm=
 
-" shortname - use 8.3 file names (local to buffer)
-set nosn " sn
-
 "
 " the swap file
 " 
@@ -649,20 +624,11 @@ set nosn " sn
 " swapfile - use a swap file for this buffer (local to buffer)
 set swf " noswf
 
-" swapsync - "sync", "fsync" or empty; how to flush a swap file to disk
-set sws=fsync
-
 " updatecount - number of characters typed to cause a swap file update
 set uc=200
 
 " updatetime - time in msec after which the swap file will be updated
 set ut=4000
-
-" maxmem - maximum amount of memory in Kbyte used for one buffer
-set mm=32768
-
-" maxmemtot - maximum amount of memory in Kbyte used for all buffers
-set mmt=32768
 
 "
 " command line editing
@@ -886,9 +852,6 @@ set ccv=
 " delcombine - Delete combining (composing) characters on their own
 set nodeco " deco
 
-" imactivatekey - key that activates the X input method
-set imak=
-
 " ambiwidth - Width of ambiguous width characters
 set ambw=single
 
@@ -954,7 +917,7 @@ hi SignColumn cterm=none ctermbg=none
 "
 " Use goimports for Fmt
 "
-let g:go_fmt_command = expand("~/.vim/bin/gofmtimport")
+let g:go_fmt_command = expand("~/.config/nvim/bin/gofmtimport")
 
 "
 " filetype (common for plugins)
