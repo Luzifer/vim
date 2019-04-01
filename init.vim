@@ -996,6 +996,13 @@ au FileType sh,zsh au BufWritePre <buffer> :call SHFmt()
 let g:typescript_indent_disable = 1
 
 "
+" vim-airline configuration
+"
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+
+"
 " Custom commands
 "
 
