@@ -12,6 +12,8 @@ Plug 'godlygeek/tabular'
 Plug 'Chiel92/vim-autoformat'
 Plug 'vim-airline/vim-airline'
 Plug 'reedes/vim-pencil'
+
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Languages
@@ -21,7 +23,6 @@ Plug 'groenewege/vim-less'
 Plug 'mutewinter/nginx.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'ekalinin/Dockerfile.vim'
-Plug 'zchee/deoplete-go', { 'do': 'make'}
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'cespare/vim-toml'
 Plug 'fatih/vim-hclfmt'
@@ -966,9 +967,18 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 " vim-go configuration
 "
 
-let g:go_gocode_autobuild = 1
-let g:go_metalinter_deadline = "20s"
 let g:go_autodetect_gopath = 0
+let g:go_def_mode = "gopls"
+let g:go_metalinter_deadline = "20s"
+
+"
+" LanguageServer configuration
+"
+
+let g:LanguageClient_serverCommands = {
+    \ 'go': ['gopls'],
+    \ 'python': ['pyls'],
+    \ }
 
 "
 " Autoformat configuration
