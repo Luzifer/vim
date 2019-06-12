@@ -20,7 +20,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'b4b4r07/vim-hcl'
 Plug 'cespare/vim-toml'
 Plug 'ekalinin/Dockerfile.vim'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go' " Needs tools installation: https://gist.github.com/Luzifer/799bd9e5a06c3b8509d6da3a8f530b5c
 Plug 'fatih/vim-hclfmt'
 Plug 'groenewege/vim-less'
 Plug 'jakar/vim-json'
