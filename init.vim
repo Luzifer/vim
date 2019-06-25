@@ -975,6 +975,10 @@ let g:go_metalinter_deadline = "20s"
 " LanguageServer configuration
 "
 
+let g:LanguageClient_rootMarkers = {
+  \   'go': ['go.mod'],
+  \ }
+
 let g:LanguageClient_serverCommands = {
   \   'go': ['gopls'],
   \   'python': ['pyls'],
