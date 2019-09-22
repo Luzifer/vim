@@ -798,12 +798,6 @@ set nohk " hk
 " hkmapp - use phonetic Hebrew keyboard mapping
 set nohkp " hkp
 
-" altkeymap - use Farsi as the second language when 'revins' is set
-set noakm " akm
-
-" fkmap - use Farsi keyboard mapping
-set nofk " fk
-
 " arabic - Prepare for editing Arabic text (local to window)
 set noarab " arab
 
