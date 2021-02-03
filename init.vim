@@ -964,8 +964,10 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 let g:go_autodetect_gopath = 0
 let g:go_def_mode = "gopls"
-let g:go_fmt_command="gopls"
-let g:go_gopls_gofumpt=1
+let g:go_fmt_command = "gopls"
+let g:go_gopls_gofumpt = 1
+let g:go_imports_autosave = 1
+let g:go_imports_mode = "gopls"
 let g:go_metalinter_deadline = "20s"
 
 "
