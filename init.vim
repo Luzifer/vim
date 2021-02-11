@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Other plugins
 Plug 'airblade/vim-gitgutter'
 Plug 'Chiel92/vim-autoformat'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'godlygeek/tabular'
 Plug 'junegunn/vim-easy-align'
 Plug 'nathanaelkane/vim-indent-guides'
