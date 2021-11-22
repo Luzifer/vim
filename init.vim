@@ -912,11 +912,6 @@ let g:gitgutter_highlight_lines = 0
 hi SignColumn cterm=none ctermbg=none
 
 "
-" Use goimports for Fmt
-"
-let g:go_fmt_command = expand("~/.config/nvim/bin/gofmtimport")
-
-"
 " filetype (common for plugins)
 "
 filetype plugin on
@@ -969,6 +964,7 @@ let g:go_def_mode = "gopls"
 let g:go_fmt_autosave = 1
 let g:go_fmt_command = "gopls"
 let g:go_gopls_gofumpt = 1
+let g:go_gopls_local = $GOIMPORT_LOCAL
 let g:go_imports_autosave = 1
 let g:go_imports_mode = "gopls"
 let g:go_metalinter_deadline = "20s"
