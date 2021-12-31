@@ -31,6 +31,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'mutewinter/nginx.vim'
 Plug 'posva/vim-vue'
+Plug 'NoahTheDuke/vim-just'
 
 call plug#end()
 
