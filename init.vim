@@ -32,6 +32,7 @@ Plug 'Matt-Deacalion/vim-systemd-syntax'
 Plug 'mutewinter/nginx.vim'
 Plug 'posva/vim-vue'
 Plug 'NoahTheDuke/vim-just'
+Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 
 call plug#end()
 
@@ -55,7 +56,7 @@ set pt=
 
 "
 " using the mouse
-" 
+"
 
 " mouse - list of flags for using the mouse
 set mouse=n
@@ -74,7 +75,7 @@ set ve=block
 
 "
 " selecting text
-" 
+"
 
 " selection - "old", "inclusive" or "exclusive"; how selecting text behaves
 set sel=old
@@ -91,7 +92,7 @@ set km=
 
 "
 " terminal
-" 
+"
 
 " term - name of the used terminal
 "set term=builtin_gui
@@ -122,7 +123,7 @@ set iconstring=
 
 "
 " moving around, searching and patterns
-" 
+"
 
 " whichwrap - list of flags specifying which commands wrap to another line (local to window)
 set ww=b,s
@@ -175,7 +176,7 @@ set inex=
 
 "
 " syntax and highlighting
-" 
+"
 
 " enable syntax highlighting by default
 syntax enable
@@ -191,7 +192,7 @@ set hls " nohls
 
 "
 " displaying text
-" 
+"
 
 " scroll - number of lines to scroll for CTRL-U and CTRL-D (local to window)
 set scr=6
@@ -251,7 +252,7 @@ set nu " nonu
 
 "
 " editing text
-" 
+"
 
 " undolevels - maximum number of changes that can be undone
 set ul=1000
@@ -315,7 +316,7 @@ set nf=octal,hex
 
 "
 " tabs and indenting
-" 
+"
 
 " tabstop - number of spaces a <Tab> in the text stands for (local to buffer)
 set ts=2
@@ -420,7 +421,7 @@ set fdn=20
 
 "
 " multiple windows
-" 
+"
 
 " laststatus - 0, 1 or 2; when to use a status line for the last window
 set ls=0
@@ -478,7 +479,7 @@ set sbo=ver,jump
 
 "
 " messages and info
-" 
+"
 
 " terse - add 's' flag in 'shortmess' (don't show search message)
 set noterse " terse
@@ -521,7 +522,7 @@ set hlg=
 
 "
 " diff mode
-" 
+"
 
 " diff - use diff mode for the current window (local to window)
 set nodiff " diff
@@ -537,7 +538,7 @@ set pex=
 
 "
 " mapping
-" 
+"
 
 " maxmapdepth - maximum depth of mapping
 set mmd=1000
@@ -559,7 +560,7 @@ set ttm=-1
 
 "
 " reading and writing files
-" 
+"
 
 " modeline - enable using settings from modelines when reading a file (local to buffer)
 set ml " noml
@@ -620,7 +621,7 @@ set pm=
 
 "
 " the swap file
-" 
+"
 
 " directory - list of directories for the swap file
 "set dir=.,/home/groover/tmp,/home/groover,/var/tmp,/tmp
@@ -638,7 +639,7 @@ set ut=4000
 " command line editing
 "
 
-" history - how many command lines are remembered 
+" history - how many command lines are remembered
 set hi=100
 
 " wildchar - key that triggers command-line expansion
@@ -670,7 +671,7 @@ set cwh=7
 
 "
 " executing external commands
-" 
+"
 
 " shell - name of the shell program used for external commands
 set sh=/bin/bash
@@ -741,7 +742,7 @@ set csqf=
 
 "
 " running make and jumping to errors
-" 
+"
 
 " errorfile - name of the file that contains error messages
 set ef=errors.err
@@ -766,7 +767,7 @@ set gfm=%f:%l:%m,%f:%l%m,%f\ \ %l%m
 
 "
 " language specific
-" 
+"
 
 " isfname - specifies the characters in a file name
 set isf=@,48-57,/,.,-,_,+,,,#,$,%,~,=
@@ -830,7 +831,7 @@ set noimc " imc
 
 "
 " multi-byte characters
-" 
+"
 
 " encoding - character encoding used in Vim: "latin1", "utf-8", "euc-jp", "big5", etc.
 set enc=utf-8
@@ -855,7 +856,7 @@ set ambw=single
 
 "
 " various
-" 
+"
 
 " cursorline - show a marker on the current line
 set cursorline
@@ -988,9 +989,9 @@ let g:LanguageClient_serverCommands = {
 "
 
 let g:formatters_vue = ['eslint_local']
+let g:shfmt_fmt_on_save = 1
 
 au FileType python,javascript,vue au BufWritePre <buffer> :Autoformat
-au FileType sh,zsh au BufWritePre <buffer> :call SHFmt()
 
 "
 " typescript-vim configuration
