@@ -19,6 +19,7 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Languages
+Plug 'mrk21/yaml-vim'
 Plug 'b4b4r07/vim-hcl'
 Plug 'cespare/vim-toml'
 Plug 'ekalinin/Dockerfile.vim'
