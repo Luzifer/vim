@@ -722,24 +722,6 @@ set tgst " notgst
 " showfulltag - when completing tags in Insert mode show more info
 set nosft " sft
 
-" cscopeprg - command for executing cscope
-set csprg=cscope
-
-" cscopetag - use cscope for tag commands
-set nocst " cst
-
-" cscopetagorder - 0 or 1; the order in which ":cstag" performs a search
-set csto=0
-
-" cscopeverbose - give messages when adding a cscope database
-set nocsverb " csverb
-
-" cscopepathcomp - how many components of the path to show
-set cspc=0
-
-" cscopequickfix - When to open a quickfix window for cscope
-set csqf=
-
 "
 " running make and jumping to errors
 "
