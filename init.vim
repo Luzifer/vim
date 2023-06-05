@@ -19,7 +19,6 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Languages
-Plug 'mrk21/yaml-vim'
 Plug 'b4b4r07/vim-hcl'
 Plug 'cespare/vim-toml'
 Plug 'ekalinin/Dockerfile.vim'
@@ -30,9 +29,11 @@ Plug 'jakar/vim-json'
 Plug 'kchmck/vim-coffee-script'
 Plug 'leafgarland/typescript-vim'
 Plug 'Matt-Deacalion/vim-systemd-syntax'
+Plug 'mrk21/yaml-vim'
+Plug 'mustache/vim-mustache-handlebars'
 Plug 'mutewinter/nginx.vim'
-Plug 'posva/vim-vue'
 Plug 'NoahTheDuke/vim-just'
+Plug 'posva/vim-vue'
 Plug 'z0mbix/vim-shfmt', { 'for': 'sh' }
 
 call plug#end()
