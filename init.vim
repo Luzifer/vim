@@ -69,9 +69,6 @@ set mousem=extend
 " mousetime - maximum time in msec to recognize a double-click
 set mouset=500
 
-" mouseshape - what the mouse pointer looks like in different modes
-set mouses=i-r:beam,s:updown,sd:udsizing,vs:leftright,vd:lrsizing,m:no,ml:up-arrow,v:rightup-arrow
-
 " virtualedit - when to use virtual editing: "block", "insert" and/or "all"
 set ve=block
 
@@ -825,9 +822,6 @@ set fenc=
 
 " fileencodings - automatically detected character encodings
 set fencs=ucs-bom
-
-" termencoding - character encoding used by the terminal
-set tenc=utf-8
 
 " charconvert - expression used for character encoding conversion
 set ccv=
